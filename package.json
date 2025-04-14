@@ -1,0 +1,14 @@
+{
+  "name": "recipe-ai",
+  "version": "1.0.0",
+  "description": "recipeAI - AI-powered recipe creator for Swiss market",
+  "scripts": {
+    "start:frontend": "cd frontend && ng serve",
+    "start:backend": "cd backend && npm run dev",
+    "dev": "concurrently \"npm run start:frontend\" \"npm run start:backend\"",
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+} 

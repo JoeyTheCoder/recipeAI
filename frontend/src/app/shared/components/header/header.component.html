@@ -1,0 +1,23 @@
+<header class="bg-white py-4 px-6 flex items-center justify-between shadow-sm">
+  <!-- Logo -->
+  <a routerLink="/" class="text-blue-600 text-xl font-bold">recipeAI</a>
+  
+  <!-- Navigation -->
+  <nav class="hidden md:block">
+    <ul class="flex space-x-8">
+      <li *ngFor="let item of navItems">
+        <a [routerLink]="item.path" class="text-gray-600 hover:text-blue-600 transition-colors">
+          {{ item.label }}
+        </a>
+      </li>
+    </ul>
+  </nav>
+  
+  <!-- Auth buttons -->
+  <div class="flex items-center space-x-4">
+    <button class="text-gray-700 hover:text-blue-600">Log in</button>
+    <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition-colors">
+      Sign up
+    </button>
+  </div>
+</header>
